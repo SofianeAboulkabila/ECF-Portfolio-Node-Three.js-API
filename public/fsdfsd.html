@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div
+            style="height: 300px; width: 750px; margin-left: 60px; margin-top: 50px; display: flex; align-items: flex-end;">
+            <div style="height:125px; width: 33.333%; background: brown; display: flex; align-items: center;
+            justify-content: center;">
+                <div
+                    style="height: 100px; width: 100px; background: white; border-radius: 100%">
+                </div>
+            </div>
+            <div style="height:280px; width: 33.333%; background: rgb(235, 200, 1); display: flex; align-items: center;
+            justify-content: center;">
+                <div
+                    style="height: 100px; width: 100px; background: white; border-radius: 100%">
+                </div>
+            </div>
+            <div style="height:190px; width: 33.333%; background: rgb(121, 116, 116); display: flex; align-items: center;
+            justify-content: center;">
+                <div
+                    style="height: 100px; width: 100px; background: white; border-radius: 100%">
+                </div>
+            </div>
+        </div>
+
+
+        <div id="rire">
+            <div id="a">
+                <p id="p2">FJIODSJFUSDHFJSDFIHSDJFN</p>
+            </div>
+            <div id="b"></div>
+            <p id="p1">lorem</p>
+        </div>
+
+
+
+        <style>
+            body {
+                background: gray;
+            }
+
+            #rire {
+                border: 1px solid red;
+                width: 700px;
+                height: 700px;
+                background: rgb(42, 90, 99);
+                margin: auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: 
+                ". a"
+                "p1 b";
+            }
+
+
+
+
+            @media screen and (max-width: 768px) {
+
+
+
+                #rire {
+                    grid-template-areas: 
+                ". b"
+                "p1 a";
+                }
+
+
+
+
+
+
+            }
+
+
+
+
+
+
+
+            #a {
+                background: url(/bulbasaur.jpg) center/contain no-repeat;
+                grid-area: a;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: 
+                ". ."
+                ". c";
+            }
+
+            #b {
+                background: url(/dragonite.jpg) center/contain no-repeat;
+                grid-area: b;
+            }
+            #p1 {
+                grid-area: p1;
+                margin: auto;
+            }
+            #p2 {
+                grid-area: p2;
+            }
+        </style>
+    </body>
+
+</html>
